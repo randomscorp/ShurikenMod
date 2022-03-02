@@ -13,6 +13,7 @@ namespace Shuriken
 
 		public int damageLimit = 60;
 		public float ratio = 3;
+
 		private float counter = 0;
 		private int damage = 60;
 

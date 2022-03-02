@@ -137,16 +137,16 @@ namespace Shuriken
                     body.velocity = direction.normalized * speed;
                     time += Time.fixedDeltaTime;
                     if (time >= fowardTime) { time = 0; currentState = states.Back; }
-                    this.transform.Rotate(0, 0, -10);
+                    this.transform.Rotate(0, 0, -18);
                     break;
 
                 case states.Hang:
                     body.velocity = new Vector2(0,0);
-                    this.transform.Rotate(0, 0, -12);
+                    this.transform.Rotate(0, 0, -10);
                     break;
 
                 case states.Back:
-                    this.transform.Rotate(0, 0, 10);
+                    this.transform.Rotate(0, 0, -18);
                     speed = Math.Abs(speed);
                     body.velocity = (body.transform.position - HeroController.instance.transform.position).normalized * -speed;
                     break;

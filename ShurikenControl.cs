@@ -22,7 +22,7 @@ namespace Shuriken
         {
             get
             {
-                return PlayerData.instance.fireballLevel == 2 ? shurikenB: shurikenW;
+                return ShurikenMod.settings.shurikenLevel == 2 ? shurikenB: shurikenW;
 
 
             }
@@ -46,7 +46,7 @@ namespace Shuriken
             {
 
 
-                return HeroController.instance.CanInput() &&(PlayerData.instance.fireballLevel==1 || PlayerData.instance.fireballLevel == 2);
+                return HeroController.instance.CanInput() &&(ShurikenMod.settings.shurikenLevel==1 || ShurikenMod.settings.shurikenLevel == 2);
             }
             set
             {

@@ -85,6 +85,12 @@ namespace Shuriken
 
             On.HeroController.Start += HeroController_Start;
             On.HeroController.TakeDamage += HeroController_TakeDamage;
+
+            bool rando = ModHooks.GetMod("Randomizer 4") is Mod;
+            bool ic = ModHooks.GetMod("ItemChangerMod") is Mod;
+
+            if (rando) Rando.MenuHolder.Hook();
+            Rando.ShurikenRando.Hook(rando,ic);
         }
 
         private static void HeroController_TakeDamage(On.HeroController.orig_TakeDamage orig, HeroController self, GameObject go, GlobalEnums.CollisionSide damageSide, int damageAmount, int hazardType)

@@ -20,6 +20,8 @@ namespace Shuriken
 
             [JsonConverter(typeof(PlayerActionSetConverter))]
             public KeyBinds keybinds = new KeyBinds();
+            public int shurikenLevel = 0;
+            public bool shurikenRando = false;
         }
 
         public class KeyBinds : PlayerActionSet
