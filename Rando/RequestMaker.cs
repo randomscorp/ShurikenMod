@@ -42,7 +42,7 @@ namespace Shuriken.Rando
         {
             if (ShurikenMod.settings.shurikenRando)
             {
-                rb.AddItemByName("Shuriken", 3);
+                rb.AddItemByName("Shuriken", 4);
 
             }
 

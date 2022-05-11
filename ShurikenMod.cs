@@ -61,12 +61,12 @@ namespace Shuriken
         {
             Log("Initializing");
             Instance = this;
-            ShurikenControl.shurikenW = LoadSprite("sprite");
-            ShurikenControl.shurikenW.transform.localScale /= 4;//2.7f;
+            ShurikenControl.shurikenW = LoadSprite("tiso");
+            ShurikenControl.shurikenW.transform.localScale /= 10;//4;//2.7f;
             ShurikenControl.shurikenW.SetActive(false);
 
-            ShurikenControl.shurikenB = LoadSprite("shurikenB");
-            ShurikenControl.shurikenB.transform.localScale /=2.7f;
+            ShurikenControl.shurikenB = LoadSprite("tiso");
+            ShurikenControl.shurikenB.transform.localScale /= 4;//2.7f;
             ShurikenControl.shurikenB.SetActive(false);
 
 
@@ -131,11 +131,3 @@ namespace Shuriken
         }
     }
 }
-
-
-
-
-
-
-
-

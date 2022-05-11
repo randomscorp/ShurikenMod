@@ -10,7 +10,7 @@ namespace Shuriken.Rando
     {
         public override void Initialize()
         {
-            ShurikenMod.settings.shurikenLevel = 0;
+           // ShurikenMod.settings.shurikenLevel = 0;
         }
 
         public override void Unload()
@@ -20,10 +20,14 @@ namespace Shuriken.Rando
         public void GiveShuriken()
         {
             int level = ShurikenMod.settings.shurikenLevel;
-            Modding.Logger.Log("oi");
+            Modding.Logger.Log("shuriken given");
             if (level < 2)
             {
                 ShurikenMod.settings.shurikenLevel += 1;
+            }
+            else
+            {
+                HeroController.instance.AddGeo(300);
             }
 
 

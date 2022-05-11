@@ -20,7 +20,7 @@ namespace Shuriken
         public states currentState = states.Foward;
         private states prevState;
 
-        public float fowardTime =0.5f;
+        public float fowardTime =0.33f;
         private bool canTeleport
         {
             get
@@ -142,7 +142,7 @@ namespace Shuriken
 
                 case states.Hang:
                     body.velocity = new Vector2(0,0);
-                    this.transform.Rotate(0, 0, -10);
+                    this.transform.Rotate(0, 0, -30);//-10
                     break;
 
                 case states.Back:
